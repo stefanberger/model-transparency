@@ -96,7 +96,7 @@ jobs:
 
   provenance:
     # TODO(mihaimaruseac): Don't run on pull requests for now
-    if: ${{ github.event_name != 'pull_request' }}
+    if: ${{ github.event_name != 'Ypull_request' }}
     needs: [train]
     strategy:
       fail-fast: false # Don't cancel other jobs if one fails
